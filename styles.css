@@ -306,6 +306,82 @@ section {
 }
 
 /* ===========================
+   Media Slider
+   =========================== */
+.media-slider {
+    margin-top: 1.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    background: #fcfdff;
+    overflow: hidden;
+}
+
+.slider-track {
+    display: flex;
+    transition: transform 0.4s ease;
+}
+
+.slide-placeholder {
+    min-width: 100%;
+    min-height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem;
+    color: var(--text-light);
+    font-weight: 500;
+    background:
+        repeating-linear-gradient(
+            -45deg,
+            #f2f6fb,
+            #f2f6fb 12px,
+            #e7eef7 12px,
+            #e7eef7 24px
+        );
+}
+
+.slide-image {
+    min-width: 100%;
+    height: 220px;
+    overflow: hidden;
+    background: #e7eef7;
+}
+
+.slide-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.slider-controls {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.6rem;
+    background: white;
+    border-top: 1px solid var(--border-color);
+}
+
+.slider-btn {
+    border: 1px solid var(--border-color);
+    background: white;
+    color: var(--primary-color);
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.slider-btn:hover {
+    background: var(--secondary-color);
+    color: white;
+    border-color: var(--secondary-color);
+}
+
+/* ===========================
    Resume Section
    =========================== */
 .resume-section {
@@ -564,6 +640,14 @@ section {
     
     .portfolio-grid {
         grid-template-columns: 1fr;
+    }
+
+    .slide-placeholder {
+        min-height: 180px;
+    }
+
+    .slide-image {
+        height: 180px;
     }
 }
 

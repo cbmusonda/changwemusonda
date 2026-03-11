@@ -98,6 +98,65 @@ const navHighlight = () => {
 
 window.addEventListener('scroll', navHighlight);
 
+// Simple reusable slider logic for project and experience media sections
+const mediaSliders = document.querySelectorAll('.media-slider');
+
+mediaSliders.forEach((slider) => {
+    const track = slider.querySelector('.slider-track');
+    const slides = slider.querySelectorAll('.slide-placeholder, .slide-image');
+    const prevBtn = slider.querySelector('.slider-btn.prev');
+    const nextBtn = slider.querySelector('.slider-btn.next');
+    let currentIndex = 0;
+
+    if (!track || slides.length === 0 || !prevBtn || !nextBtn) {
+        return;
+    }
+
+    const updateSlider = () => {
+        track.style.transform = `translateX(-${currentIndex * 100}%)`;
+    };
+
+    const goPrev = () => {
+        currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+        updateSlider();
+    };
+
+    const goNext = () => {
+        currentIndex = (currentIndex + 1) % slides.length;
+        updateSlider();
+    };
+
+    prevBtn.addEventListener('click', () => {
+        goPrev();
+    });
+
+    nextBtn.addEventListener('click', () => {
+        goNext();
+    });
+
+    let touchStartX = 0;
+    let touchEndX = 0;
+
+    track.addEventListener('touchstart', (event) => {
+        touchStartX = event.changedTouches[0].screenX;
+    }, { passive: true });
+
+    track.addEventListener('touchend', (event) => {
+        touchEndX = event.changedTouches[0].screenX;
+        const swipeDistance = touchEndX - touchStartX;
+
+        if (Math.abs(swipeDistance) < 40) {
+            return;
+        }
+
+        if (swipeDistance > 0) {
+            goPrev();
+        } else {
+            goNext();
+        }
+    }, { passive: true });
+});
+
 // Add active class styling
 const style = document.createElement('style');
 style.textContent = `
