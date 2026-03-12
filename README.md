@@ -149,6 +149,21 @@ To add a profile photo to your hero section, add this HTML after line 38 in `ind
 
 ## 🌐 Deployment
 
+### GitHub Pages (Auto deploy on push to `main`)
+
+This project now includes a GitHub Actions workflow at `.github/workflows/deploy-pages.yml`.
+
+Your website URL for your resume is:
+
+`https://cbmusonda.github.io/changwemusonda/`
+
+After each push to `main`, GitHub will automatically redeploy the latest version.
+
+One-time GitHub setting:
+
+1. In your repository, go to **Settings → Pages**
+2. Under **Build and deployment**, set **Source** to **GitHub Actions**
+
 ### Deploy to GitHub Pages (Free)
 1. Create a GitHub repository
 2. Push your code to the repository
