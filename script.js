@@ -103,7 +103,7 @@ const mediaSliders = document.querySelectorAll('.media-slider');
 
 mediaSliders.forEach((slider) => {
     const track = slider.querySelector('.slider-track');
-    const slides = slider.querySelectorAll('.slide-placeholder, .slide-image');
+    const slides = slider.querySelectorAll('.slide-placeholder, .slide-image, .slide-video');
     const prevBtn = slider.querySelector('.slider-btn.prev');
     const nextBtn = slider.querySelector('.slider-btn.next');
     let currentIndex = 0;
