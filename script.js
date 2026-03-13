@@ -98,6 +98,79 @@ const navHighlight = () => {
 
 window.addEventListener('scroll', navHighlight);
 
+// Convert common video links into embeddable URLs for slider video slots.
+const getEmbeddedVideoUrl = (url) => {
+    if (!url) {
+        return null;
+    }
+
+    const trimmedUrl = url.trim();
+
+    if (/\.mp4($|\?)/i.test(trimmedUrl)) {
+        return { type: 'mp4', url: trimmedUrl };
+    }
+
+    try {
+        const parsedUrl = new URL(trimmedUrl);
+        const host = parsedUrl.hostname.replace('www.', '');
+
+        if (host === 'youtube.com' || host === 'm.youtube.com') {
+            const videoId = parsedUrl.searchParams.get('v');
+            if (videoId) {
+                return { type: 'embed', url: `https://www.youtube.com/embed/${videoId}` };
+            }
+        }
+
+        if (host === 'youtu.be') {
+            const videoId = parsedUrl.pathname.slice(1);
+            if (videoId) {
+                return { type: 'embed', url: `https://www.youtube.com/embed/${videoId}` };
+            }
+        }
+
+        if (host === 'vimeo.com') {
+            const videoId = parsedUrl.pathname.split('/').filter(Boolean)[0];
+            if (videoId) {
+                return { type: 'embed', url: `https://player.vimeo.com/video/${videoId}` };
+            }
+        }
+    } catch (error) {
+        return null;
+    }
+
+    return null;
+};
+
+document.querySelectorAll('.slide-video[data-video-url]').forEach((videoSlide) => {
+    const videoUrl = videoSlide.getAttribute('data-video-url');
+    const embedded = getEmbeddedVideoUrl(videoUrl);
+
+    if (!embedded) {
+        return;
+    }
+
+    if (embedded.type === 'embed') {
+        const iframe = videoSlide.querySelector('iframe');
+        if (iframe) {
+            iframe.src = embedded.url;
+        }
+        return;
+    }
+
+    if (embedded.type === 'mp4') {
+        const iframe = videoSlide.querySelector('iframe');
+        if (iframe) {
+            iframe.remove();
+        }
+
+        const video = document.createElement('video');
+        video.controls = true;
+        video.preload = 'metadata';
+        video.src = embedded.url;
+        videoSlide.appendChild(video);
+    }
+});
+
 // Simple reusable slider logic for project and experience media sections
 const mediaSliders = document.querySelectorAll('.media-slider');
 
