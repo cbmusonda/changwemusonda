@@ -119,6 +119,11 @@ const getEmbeddedVideoUrl = (url) => {
             if (videoId) {
                 return { type: 'embed', url: `https://www.youtube.com/embed/${videoId}` };
             }
+            // Handle YouTube Shorts: /shorts/<id>
+            const shortsMatch = parsedUrl.pathname.match(/^\/shorts\/([^/?]+)/);
+            if (shortsMatch) {
+                return { type: 'embed', url: `https://www.youtube.com/embed/${shortsMatch[1]}` };
+            }
         }
 
         if (host === 'youtu.be') {
