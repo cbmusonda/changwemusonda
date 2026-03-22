@@ -60,13 +60,12 @@
                 <div class="resume-summary">
                     <div class="resume-section-item">
                         <div class="resume-entry">
-                            <h4>Bachelor of Science - California State Polytechnic University, Pomona</h4>
+                            <h4>Bachelor of Science in Computer Engineering - California State Polytechnic University, Pomona</h4>
                             <p class="date">Expected May 2026</p>
-                            <p>Major: Electrical &amp; Computer Engineering</p>
                             <p>GPA: 3.59</p>
                         </div>
                         <div class="resume-entry">
-                            <h4>Associates in Mathematics - Crafton Hills College</h4>
+                            <h4>Associate of Science in Mathematics - Crafton Hills College</h4>
                             <p class="date">May 2023</p>
                             <p>GPA: 3.67</p>
                         </div>
@@ -84,13 +83,15 @@
                 <div class="resume-summary">
                     <div class="resume-section-item">
                         <div class="resume-entry">
-                            <h4>Autonomy Lead Engineer - Team Pegasus (Lockheed Martin Sponsored)</h4>
-                            <p class="date">August 2025 - Present</p>
+                            <h4>Autonomy Engineer → Autonomy Lead - Team Pegasus (Lockheed Martin Sponsored)</h4>
+                            <p class="date">Jan 2025 - Present</p>
                             <ul>
-                                <li>Lead system architecture development for autonomous aerial vehicle platform, coordinating perception, localization, and control subsystems in a distributed real-time framework</li>
-                                <li>Design and implement state machine logic for mission execution, safety monitoring, and fault recovery in embedded flight systems</li>
-                                <li>Integrate multi-sensor hardware including LiDAR, stereo cameras, IMU, and flight controllers into cohesive embedded architectures with deterministic timing guarantees</li>
-                                <li>Conduct system-level validation and troubleshooting to ensure reliable operation under real-world conditions</li>
+                                <li>Owned development of end-to-end UAV autonomy stack across perception, path planning, and control using ROS 2 and PX4 for a 110 lb eVTOL platform</li>
+                                <li>Improved flight reliability during testing by diagnosing and resolving hardware-software integration failures using telemetry and log-based debugging</li>
+                                <li>Architected modular C++/Python nodes for sensor fusion, state estimation, and real-time control on embedded systems</li>
+                                <li>Integrated LiDAR, stereo cameras, and IMUs enabling real-time perception and state estimation</li>
+                                <li>Designed validation workflows and safety-critical logic to handle failure cases during real-world flight testing</li>
+                                <li>Collaborated across autonomy, avionics, and hardware teams to ensure seamless system integration and deployment readiness</li>
                             </ul>
                             <div class="media-slider" aria-label="Team Pegasus work experience images">
                                 <div class="slider-track">
@@ -129,10 +130,11 @@
                             <h4>Research Assistant - Autonomous Vehicle Laboratory</h4>
                             <p class="date">May 2025 - Present</p>
                             <ul>
-                                <li>Develop modular control software in C++ and Python for real-time autonomous navigation and decision-making on unmanned ground vehicle platforms</li>
-                                <li>Design and validate sensor processing pipelines combining LiDAR, cameras, GPS, and IMU data for robust perception in diverse operating conditions</li>
-                                <li>Implement simulation frameworks and conduct field testing to validate system performance and diagnose integration issues</li>
-                                <li>Document system architectures, calibration procedures, and testing methodologies to enable reproducible research and knowledge transfer</li>
+                                <li>Developed real-time robotic software using C++ and Python for localization, mapping, and control in autonomous ground vehicle systems</li>
+                                <li>Improved perception and state estimation accuracy by integrating LiDAR, stereo cameras, and IMUs into multi-sensor fusion pipelines</li>
+                                <li>Diagnosed and resolved failures across distributed ROS 2 nodes, increasing system stability during field testing and deployment</li>
+                                <li>Designed and documented system architecture, calibration procedures, and validation workflows to support reproducibility and team-wide integration</li>
+                                <li>Supported iterative testing cycles on autonomous platforms, analyzing system performance and refining algorithms in real-world environments</li>
                             </ul>
                             <div class="media-slider" aria-label="Autonomous Vehicle Laboratory work experience images">
                                 <div class="slider-track">
@@ -172,23 +174,45 @@
             <div class="portfolio-grid">
                 <div class="portfolio-item">
                     <div class="portfolio-item-content">
-                        <h3>Real-Time SLAM System</h3>
-                        <p>Developed a complete simultaneous localization and mapping system using ROS 2, implementing sensor fusion algorithms for robust state estimation in GPS-denied environments. The system coordinates multiple sensor inputs through a structured computational pipeline, demonstrating practical applications in autonomous navigation and spatial awareness for robotic platforms.</p>
+                        <h3>Neural Network-Based Path Planning</h3>
+                        <p class="date">Jan 2026 – Present</p>
+                        <p>Designed neural network models in Python to approximate A* path planning, reducing computation time in dynamic environments. Evaluated model scalability and performance compared to traditional search algorithms.</p>
+                        <span class="btn-link coming-soon">GitHub Coming Soon</span>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-item-content">
+                        <h3>Unmanned Ground Vehicle SLAM System</h3>
+                        <p class="date">Dec 2025 – Present</p>
+                        <p>Developed a ROS 2-based SLAM pipeline for autonomous navigation with integrated mapping and localization. Improved localization robustness through parameter tuning and failure analysis.</p>
                         <a href="https://github.com/cbmusonda/avl_slam" target="_blank" class="btn-link">View Project →</a>
                     </div>
                 </div>
                 <div class="portfolio-item">
                     <div class="portfolio-item-content">
-                        <h3>Hardware-Accelerated Path Planning</h3>
-                        <p>Engineered a high-performance path planning engine on FPGA hardware, translating the A* search algorithm into optimized digital logic. Achieved 10-100× performance improvements over software implementations through careful timing optimization and memory access patterns, demonstrating the power of hardware acceleration for computationally intensive algorithms in real-time systems.</p>
+                        <h3>A* Path Planning on FPGA (Verilog + Python)</h3>
+                        <p class="date">Aug 2025 – Dec 2025</p>
+                        <p>Implemented a hardware-accelerated path planning system in Verilog with optimized parallel execution. Validated performance against Python reference models across multiple test scenarios.</p>
                         <a href="https://github.com/cbmusonda/AStar_FPGA" target="_blank" class="btn-link">View Project →</a>
                     </div>
                 </div>
                 <div class="portfolio-item">
                     <div class="portfolio-item-content">
-                        <h3>Deep Learning for Medical Imaging</h3>
-                        <p>Built an end-to-end machine learning pipeline for cardiac MRI segmentation using PyTorch, implementing semi-supervised training strategies for limited labeled data scenarios. The system demonstrates practical computer vision techniques applied to healthcare, with rigorous quantitative evaluation and comprehensive technical documentation of design trade-offs.</p>
+                        <h3>Medical Image Segmentation (PyTorch)</h3>
+                        <p class="date">Aug 2025 – Dec 2025</p>
+                        <p>Developed a PyTorch pipeline for cardiac MRI segmentation with reproducible training workflows. Improved segmentation consistency through preprocessing and metric-driven evaluation.</p>
                         <a href="https://github.com/cbmusonda/ComputerVision" target="_blank" class="btn-link">View Project →</a>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="section-title" style="margin-top: 3rem;">Hackathons</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <div class="portfolio-item-content">
+                        <h3>Cal Poly Pomona AI Hackathon</h3>
+                        <p class="date">Mar 2026 – Present</p>
+                        <p>Designed and implemented AI-based solutions in a fast-paced team environment under strict time constraints. Utilized rapid prototyping, version control, and iterative testing to deliver functional software systems.</p>
                     </div>
                 </div>
             </div>
@@ -213,21 +237,14 @@
                             <span class="skill-tag">C/C++</span>
                             <span class="skill-tag">Python</span>
                             <span class="skill-tag">Verilog</span>
-                            <span class="skill-tag">CUDA</span>
-                            <span class="skill-tag">ROS 2</span>
+                            <span class="skill-tag">ROS 2 (Humble)</span>
                             <span class="skill-tag">PX4</span>
-                            <span class="skill-tag">Embedded Linux</span>
-                            <span class="skill-tag">FPGA (Artix-7)</span>
-                            <span class="skill-tag">Gazebo</span>
-                            <span class="skill-tag">KiCAD</span>
-                            <span class="skill-tag">LiDAR</span>
-                            <span class="skill-tag">Stereo Vision</span>
-                            <span class="skill-tag">IMU/GPS</span>
-                            <span class="skill-tag">Control Systems</span>
-                            <span class="skill-tag">State-Machine Design</span>
-                            <span class="skill-tag">Hardware-Software Integration</span>
-                            <span class="skill-tag">Fault Handling</span>
-                            <span class="skill-tag">System Validation</span>
+                            <span class="skill-tag">PyTorch</span>
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">Linux</span>
+                            <span class="skill-tag">Embedded Systems</span>
+                            <span class="skill-tag">Sensor Integration</span>
+                            <span class="skill-tag">UAV Autonomy</span>
                         </div>
                     </div>
                 </div>

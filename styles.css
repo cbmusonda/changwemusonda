@@ -305,6 +305,12 @@ section {
     color: var(--accent-color);
 }
 
+.btn-link.coming-soon {
+    opacity: 0.5;
+    cursor: default;
+    font-style: italic;
+}
+
 /* ===========================
    Media Slider
    =========================== */
