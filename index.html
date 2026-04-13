@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Changwe Musonda - Electrical & Computer Engineering Student specializing in autonomous systems, robotics, and embedded systems">
-    <title>Changwe Musonda - Portfolio</title>
+    <meta name="description" content="Changwe Musonda — Computer Engineering graduate from Cal Poly Pomona seeking new grad roles in robotics, autonomy, and embedded systems.">
+    <title>Changwe Musonda — Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+
     <!-- Header -->
     <header class="header">
         <div class="container">
@@ -20,13 +21,14 @@
                 </div>
                 <ul class="nav-links">
                     <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
                     <li><a href="#education">Education</a></li>
                     <li><a href="#experience">Experience</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <li><a href="#story">My Story</a></li>
                 </ul>
+                <a href="./Resume.pdf" class="nav-resume-btn" download="Resume.pdf">Download Resume</a>
                 <div class="hamburger">
                     <span></span>
                     <span></span>
@@ -39,36 +41,85 @@
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="container">
-            <h1 class="hero-title">Changwe Musonda</h1>
-            <div class="quote-section">
-                <blockquote class="quote">
-                    "Challenge yourself; It's the only path that leads to growth."
-                </blockquote>
-                <p class="quote-author">– Morgan Freeman</p>
+            <h1 class="hero-tagline">Aspiring Robotics &amp; Autonomy Engineer | Computer Engineering Graduate</h1>
+            <p class="hero-philosophy">I build autonomous systems that have to work in the real world, not just in simulation. At Cal Poly Pomona I have led teams, shipped real hardware, and learned that good engineering is as much about clear communication as it is about clean code. I am looking for a team that takes both seriously.</p>
+            <div class="hero-ctas">
+                <a href="#contact" class="btn-hero-primary">Get in Touch</a>
+                <a href="./Resume.pdf" class="btn-hero-secondary" download="Resume.pdf">Download Resume</a>
             </div>
-            <div class="scroll-indicator">
-                <span></span>
+        </div>
+        <div class="scroll-indicator">
+            <span></span>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-grid">
+                <div class="about-copy">
+                    <p>I am drawn to autonomous systems that have to perform in the physical world: ground vehicles, UAVs, and subsea platforms. That focus shaped everything from the courses I took to the research I pursued and the teams I joined.</p>
+                    <p>What makes me different from most new grads is not just the technical work. I have been leading people and owning responsibilities outside the classroom for years. I was promoted to shift lead at my job after a year, and I have been running AV systems for a live audience at my church every week since 2021.</p>
+                    <p>I am looking for a team where I can contribute from day one, learn from engineers who have been doing this longer than I have, and build things that actually have to work.</p>
+                </div>
+                <div class="about-image-col">
+                    <div class="about-image-wrap">
+                        <img src="images/headshot.jpg" alt="Changwe Musonda">
+                    </div>
+                    <p class="about-name">Changwe Musonda</p>
+                    <p class="about-tagline">Computer Engineering, Cal Poly Pomona '26</p>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Education Section -->
-    <section id="education" class="resume-section">
+    <section id="education" class="education-section">
         <div class="container">
             <h2 class="section-title">Education</h2>
-            <div class="resume-content">
-                <div class="resume-summary">
-                    <div class="resume-section-item">
-                        <div class="resume-entry">
-                            <h4>Bachelor of Science in Computer Engineering - California State Polytechnic University, Pomona</h4>
-                            <p class="date">Expected May 2026</p>
-                            <p>GPA: 3.59</p>
-                        </div>
-                        <div class="resume-entry">
-                            <h4>Associate of Science in Mathematics - Crafton Hills College</h4>
-                            <p class="date">May 2023</p>
-                            <p>GPA: 3.67</p>
-                        </div>
+            <p class="section-intro">My path to Cal Poly Pomona started at Crafton Hills College, where I built the mathematical foundation that now underlies everything I build. Moving on was a decision I made deliberately. I wanted to work on real hardware with real teams.</p>
+
+            <div class="edu-entries">
+                <div class="edu-entry">
+                    <div class="edu-header">
+                        <h3>Crafton Hills College</h3>
+                        <span class="edu-degree">Associate of Science in Mathematics</span>
+                        <span class="edu-date">May 2023</span>
+                    </div>
+                    <span class="edu-badge">GPA: 3.67</span>
+                    <span class="edu-badge">STEM Scholarship Recipient — $2,000</span>
+                    <p class="edu-prose">The Associate of Science in Mathematics did more than teach me calculus. It gave me the analytical framework I carry into every system I design. Earning a STEM Scholarship while there confirmed I was on the right track, and transferring taught me that long-term goals require deliberate planning and follow-through.</p>
+                </div>
+
+                <div class="edu-entry">
+                    <div class="edu-header">
+                        <h3>California State Polytechnic University, Pomona</h3>
+                        <span class="edu-degree">Bachelor of Science in Computer Engineering</span>
+                        <span class="edu-date">Expected May 2026</span>
+                    </div>
+                    <span class="edu-badge">GPA: 3.59</span>
+                    <p class="edu-prose">The Computer Engineering program at Cal Poly Pomona is built around applied work, not just theory. I have worked on real hardware, in real labs, with real stakes. The most visible example is my work as Autonomy Lead on Team Pegasus, a Lockheed Martin-sponsored capstone building a UAV autonomy system for a 110 lb eVTOL platform. Maintaining a 3.59 GPA alongside that kind of project load is something I am genuinely proud of.</p>
+                </div>
+            </div>
+
+            <div class="conferences-block">
+                <h3 class="conferences-title">Conferences &amp; Recognition</h3>
+                <div class="conference-list">
+                    <div class="conference-item">
+                        <span class="conference-name">CES 2026</span>
+                        <span class="conference-location">Las Vegas, NV</span>
+                        <span class="conference-detail">Attended as a student seeking industry exposure before graduating</span>
+                    </div>
+                    <div class="conference-item">
+                        <span class="conference-name">Southern California AI and Robotics Synposium (SCAIR) 2025</span>
+                        <span class="conference-location">Cal Poly Pomona</span>
+                        <span class="conference-detail">Volunteer for organizing and coordinating the event</span>
+                    </div>
+                    <div class="conference-item">
+                        <span class="conference-name">AI Hackathon 2026</span>
+                        <span class="conference-location">Cal Poly Pomona</span>
+                        <span class="conference-detail"><span class="conference-highlight">Finalist</span></span>
                     </div>
                 </div>
             </div>
@@ -76,176 +127,265 @@
     </section>
 
     <!-- Experience Section -->
-    <section id="experience" class="resume-section">
+    <section id="experience" class="experience-section">
         <div class="container">
             <h2 class="section-title">Experience</h2>
-            <div class="resume-content">
-                <div class="resume-summary">
-                    <div class="resume-section-item">
-                        <div class="resume-entry">
-                            <h4>Autonomy Engineer → Autonomy Lead - Team Pegasus (Lockheed Martin Sponsored)</h4>
-                            <p class="date">Jan 2025 - Present</p>
-                            <ul>
-                                <li>Owned development of end-to-end UAV autonomy stack across perception, path planning, and control using ROS 2 and PX4 for a 110 lb eVTOL platform</li>
-                                <li>Improved flight reliability during testing by diagnosing and resolving hardware-software integration failures using telemetry and log-based debugging</li>
-                                <li>Architected modular C++/Python nodes for sensor fusion, state estimation, and real-time control on embedded systems</li>
-                                <li>Integrated LiDAR, stereo cameras, and IMUs enabling real-time perception and state estimation</li>
-                                <li>Designed validation workflows and safety-critical logic to handle failure cases during real-world flight testing</li>
-                                <li>Collaborated across autonomy, avionics, and hardware teams to ensure seamless system integration and deployment readiness</li>
-                            </ul>
-                            <div class="media-slider" aria-label="Team Pegasus work experience images">
-                                <div class="slider-track">
-                                    <div class="slide-image">
-                                        <img src="images/Team_Pegasus.png" alt="Team Pegasus image 1">
-                                    </div>
-                                    <div class="slide-video" data-video-url="https://www.youtube.com/watch?v=hgsg0n3m5AI">
-                                        <iframe
-                                            class="embedded-video"
-                                            title="Team Pegasus demo video 1"
-                                            loading="lazy"
-                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                            allowfullscreen
-                                        ></iframe>
-                                    </div>
-                                    <div class="slide-image">
-                                        <img src="images/Team_Pegasus1.png" alt="Team Pegasus image 2">
-                                    </div>
-                                    <div class="slide-video" data-video-url="https://www.youtube.com/watch?v=rAxBBUtSx1U">
-                                        <iframe
-                                            class="embedded-video"
-                                            title="Team Pegasus demo video 2"
-                                            loading="lazy"
-                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                            allowfullscreen
-                                        ></iframe>
-                                    </div>
-                                </div>
-                                <div class="slider-controls">
-                                    <button class="slider-btn prev" type="button" aria-label="Previous image">&#10094;</button>
-                                    <button class="slider-btn next" type="button" aria-label="Next image">&#10095;</button>
-                                </div>
+            <p class="section-intro">Engineering is about more than technical skill. It is about showing up consistently, adapting under pressure, and making the people around you better. Every role here has shaped how I approach that.</p>
+
+            <div class="exp-entries">
+
+                <!-- Team Pegasus -->
+                <div class="exp-entry">
+                    <div class="exp-header">
+                        <div class="exp-title-group">
+                            <h3 class="exp-role">Autonomy Lead</h3>
+                            <span class="exp-org">Team Pegasus — Lockheed Martin Sponsored Research &amp; Senior Capstone</span>
+                        </div>
+                        <span class="exp-date">Jan 2025 – Present</span>
+                    </div>
+                    <div class="exp-prose">
+                        <p>I joined Team Pegasus in January 2025 as an Autonomy Engineer on a Lockheed Martin-sponsored research project building an end-to-end autonomy stack for a 110 lb eVTOL UAV. As the project matured and I took on the Autonomy Lead role, I chose to carry it forward as my senior capstone. I own the full autonomy pipeline (perception, path planning, and control), built in ROS 2 and PX4 on Jetson-based ARM compute, integrating LiDAR, stereo cameras, and IMUs for real-time state estimation and navigation. Leading a seven-person team across autonomy, avionics, and hardware has meant translating technical constraints into decisions the whole team can act on. When hardware-software integration failures surfaced during flight testing, I dug into telemetry logs, found the root causes, and resolved them.</p>
+                    </div>
+                    <div class="media-slider" aria-label="Team Pegasus images and videos">
+                        <div class="slider-track">
+                            <div class="slide-image">
+                                <img src="images/Team_Pegasus.png" alt="Team Pegasus UAV platform">
+                            </div>
+                            <div class="slide-video" data-video-url="https://www.youtube.com/watch?v=hgsg0n3m5AI">
+                                <iframe
+                                    class="embedded-video"
+                                    title="Team Pegasus demo video 1"
+                                    loading="lazy"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen
+                                ></iframe>
+                            </div>
+                            <div class="slide-image">
+                                <img src="images/Team_Pegasus1.png" alt="Team Pegasus hardware integration">
+                            </div>
+                            <div class="slide-video" data-video-url="https://www.youtube.com/watch?v=rAxBBUtSx1U">
+                                <iframe
+                                    class="embedded-video"
+                                    title="Team Pegasus demo video 2"
+                                    loading="lazy"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen
+                                ></iframe>
                             </div>
                         </div>
-                        <div class="resume-entry">
-                            <h4>Research Assistant - Autonomous Vehicle Laboratory</h4>
-                            <p class="date">May 2025 - Present</p>
-                            <ul>
-                                <li>Developed real-time robotic software using C++ and Python for localization, mapping, and control in autonomous ground vehicle systems</li>
-                                <li>Improved perception and state estimation accuracy by integrating LiDAR, stereo cameras, and IMUs into multi-sensor fusion pipelines</li>
-                                <li>Diagnosed and resolved failures across distributed ROS 2 nodes, increasing system stability during field testing and deployment</li>
-                                <li>Designed and documented system architecture, calibration procedures, and validation workflows to support reproducibility and team-wide integration</li>
-                                <li>Supported iterative testing cycles on autonomous platforms, analyzing system performance and refining algorithms in real-world environments</li>
-                            </ul>
-                            <div class="media-slider" aria-label="Autonomous Vehicle Laboratory work experience images">
-                                <div class="slider-track">
-                                    <div class="slide-image">
-                                        <img src="images/AVL1.png" alt="AVL image 1">
-                                    </div>
-                                    <div class="slide-image">
-                                        <img src="images/AVL2.png" alt="AVL image 2">
-                                    </div>
-                                    <div class="slide-video" data-video-url="https://www.youtube.com/shorts/T4WSFmM6h-E">
-                                        <iframe
-                                            class="embedded-video"
-                                            title="AVL demo video"
-                                               src="https://www.youtube.com/embed/T4WSFmM6h-E"
-                                            loading="lazy"
-                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                            allowfullscreen
-                                        ></iframe>
-                                    </div>
-                                </div>
-                                <div class="slider-controls">
-                                    <button class="slider-btn prev" type="button" aria-label="Previous image">&#10094;</button>
-                                    <button class="slider-btn next" type="button" aria-label="Next image">&#10095;</button>
-                                </div>
-                            </div>
+                        <div class="slider-controls">
+                            <button class="slider-btn prev" type="button" aria-label="Previous slide">&#10094;</button>
+                            <button class="slider-btn next" type="button" aria-label="Next slide">&#10095;</button>
                         </div>
                     </div>
                 </div>
+
+                <!-- AVL Research -->
+                <div class="exp-entry">
+                    <div class="exp-header">
+                        <div class="exp-title-group">
+                            <h3 class="exp-role">Research Assistant</h3>
+                            <span class="exp-org">Autonomous Vehicle Laboratory, Cal Poly Pomona</span>
+                        </div>
+                        <span class="exp-date">May 2025 – Present</span>
+                    </div>
+                    <div class="exp-prose">
+                        <p>I work in the Cal Poly Pomona Autonomous Vehicle Laboratory developing real-time robotic software in C++ and Python for autonomous ground vehicle systems. My work centers on multi-sensor fusion, integrating LiDAR, stereo cameras, and Xsens IMUs into ROS 2 pipelines for real-time localization and mapping. A significant part of the role is iterative field testing: running the system, analyzing where it breaks down, and refining the approach. I have also taken ownership of system documentation and calibration procedures so the whole team can reproduce results and build on each other's work.</p>
+                    </div>
+                    <div class="media-slider" aria-label="Autonomous Vehicle Laboratory images and videos">
+                        <div class="slider-track">
+                            <div class="slide-image">
+                                <img src="images/AVL1.png" alt="AVL autonomous ground vehicle">
+                            </div>
+                            <div class="slide-image">
+                                <img src="images/AVL2.png" alt="AVL sensor integration setup">
+                            </div>
+                            <div class="slide-video" data-video-url="https://www.youtube.com/shorts/T4WSFmM6h-E">
+                                <iframe
+                                    class="embedded-video"
+                                    title="AVL demo video"
+                                    loading="lazy"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen
+                                ></iframe>
+                            </div>
+                        </div>
+                        <div class="slider-controls">
+                            <button class="slider-btn prev" type="button" aria-label="Previous slide">&#10094;</button>
+                            <button class="slider-btn next" type="button" aria-label="Next slide">&#10095;</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Panda Express -->
+                <div class="exp-entry">
+                    <div class="exp-header">
+                        <div class="exp-title-group">
+                            <h3 class="exp-role">Shift Lead</h3>
+                            <span class="exp-org">Panda Express</span>
+                        </div>
+                        <span class="exp-date">June 2023 – Present</span>
+                    </div>
+                    <div class="exp-prose">
+                        <p>I started at Panda Express as a front-of-house crew member and was promoted to shift lead within a year, not because I asked for it, but because I had demonstrated I could keep a team on track during the high-volume hours when everything is moving at once and the margin for error is low. As shift lead I manage the crew, keep quality consistent under pressure, and make real-time decisions that affect how the whole shift runs. The parallels to engineering coordination are more direct than they sound: when a system is under load and something breaks, you have to prioritize fast, communicate clearly, and execute without losing the thread. This job made that second nature in a way that school could not.</p>
+                    </div>
+                </div>
+
+                <!-- AV Volunteer -->
+                <div class="exp-entry">
+                    <div class="exp-header">
+                        <div class="exp-title-group">
+                            <h3 class="exp-role">AV Volunteer</h3>
+                            <span class="exp-org">Church</span>
+                        </div>
+                        <span class="exp-date">May 2021 – Present</span>
+                    </div>
+                    <div class="exp-prose">
+                        <p>Since 2021 I have owned live AV operations (audio mixing, video switching, and streaming) for a weekly service with a live audience. There is no margin for error in live production: if something goes wrong, it goes wrong in front of everyone, in real time. Over four years of consistent weekly commitment I have built the kind of trust that only comes from showing up and getting it right, week after week. That experience sits directly behind how I think about reliability in engineering. It is not a property you verify in testing but something you have to build into your process from the start.</p>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
 
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio-section">
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
         <div class="container">
-            <h2 class="section-title">Portfolio</h2>
-            <div class="portfolio-grid">
-                <div class="portfolio-item">
-                    <div class="portfolio-item-content">
-                        <h3>Neural Network-Based Path Planning</h3>
-                        <p class="date">Jan 2026 – Present</p>
-                        <p>Designed neural network models in Python to approximate A* path planning, reducing computation time in dynamic environments. Evaluated model scalability and performance compared to traditional search algorithms.</p>
+            <h2 class="section-title">Projects</h2>
+            <p class="section-intro">These are the projects where the learning became real. Some were academic, some are ongoing, and all of them required me to figure things out under constraints. I have tried to be honest about my role in each one and what I would do differently now.</p>
+
+            <div class="projects-grid">
+
+                <!-- Project DOLPHIN -->
+                <div class="project-card">
+                    <div class="project-card-top">
+                        <span class="project-tag tag-research">Research</span>
+                        <h3 class="project-card-title">Project DOLPHIN</h3>
+                    </div>
+                    <div class="project-card-body">
+                        <p>A subsea swarm AUV autonomy system built under Dr. Scott Boskovich at Cal Poly Pomona. I own the behavior tree architecture running at 10 Hz on a Raspberry Pi 5, the fault handling system across five distinct failure modes, and the interface between autonomy, control, and perception. This is active research, and the architecture decisions I am making now will determine how the system scales.</p>
+                    </div>
+                    <div class="project-card-footer">
+                        <span class="btn-link coming-soon">GitHub — Repo Under Construction</span>
+                    </div>
+                </div>
+
+                <!-- UGV SLAM -->
+                <div class="project-card">
+                    <div class="project-card-top">
+                        <span class="project-tag tag-research">Research</span>
+                        <h3 class="project-card-title">UGV SLAM System</h3>
+                    </div>
+                    <div class="project-card-body">
+                        <p>An autonomous ground vehicle SLAM pipeline built at the Cal Poly Pomona Autonomous Vehicle Laboratory. I integrated LiDAR, stereo cameras, and Xsens IMUs into a ROS 2-based localization and mapping system for real-world autonomous navigation. The majority of the work was iterative field testing: running the system against real environments, diagnosing localization failures, and refining the pipeline through parameter tuning and structural changes.</p>
+                    </div>
+                    <div class="project-card-footer">
+                        <a href="https://github.com/cbmusonda/avl_slam" target="_blank" rel="noopener noreferrer" class="btn-link">View on GitHub →</a>
+                    </div>
+                </div>
+
+                <!-- Deep Differentiable Neural Planner -->
+                <div class="project-card">
+                    <div class="project-card-top">
+                        <span class="project-tag tag-academic">Academic</span>
+                        <h3 class="project-card-title">Deep Differentiable Neural Planner</h3>
+                    </div>
+                    <div class="project-card-body">
+                        <p>An extension of a CVPR 2022 paper on differentiable planning for egocentric navigation. I benchmarked three planning architectures (VIN, GPPN, and CALVIN variants) to evaluate their performance and scalability in learned planning settings. The work goes beyond evaluation: once I identified where each architecture breaks down, the goal became understanding how those weaknesses can be addressed and what improvements would move differentiable planning closer to real-world navigation.</p>
+                    </div>
+                    <div class="project-card-footer">
                         <span class="btn-link coming-soon">GitHub Coming Soon</span>
                     </div>
                 </div>
-                <div class="portfolio-item">
-                    <div class="portfolio-item-content">
-                        <h3>Unmanned Ground Vehicle SLAM System</h3>
-                        <p class="date">Dec 2025 – Present</p>
-                        <p>Developed a ROS 2-based SLAM pipeline for autonomous navigation with integrated mapping and localization. Improved localization robustness through parameter tuning and failure analysis.</p>
-                        <a href="https://github.com/cbmusonda/avl_slam" target="_blank" class="btn-link">View Project →</a>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="portfolio-item-content">
-                        <h3>A* Path Planning on FPGA (Verilog + Python)</h3>
-                        <p class="date">Aug 2025 – Dec 2025</p>
-                        <p>Implemented a hardware-accelerated path planning system in Verilog with optimized parallel execution. Validated performance against Python reference models across multiple test scenarios.</p>
-                        <a href="https://github.com/cbmusonda/AStar_FPGA" target="_blank" class="btn-link">View Project →</a>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="portfolio-item-content">
-                        <h3>Medical Image Segmentation (PyTorch)</h3>
-                        <p class="date">Aug 2025 – Dec 2025</p>
-                        <p>Developed a PyTorch pipeline for cardiac MRI segmentation with reproducible training workflows. Improved segmentation consistency through preprocessing and metric-driven evaluation.</p>
-                        <a href="https://github.com/cbmusonda/ComputerVision" target="_blank" class="btn-link">View Project →</a>
-                    </div>
-                </div>
-            </div>
 
-            <h2 class="section-title" style="margin-top: 3rem;">Hackathons</h2>
-            <div class="portfolio-grid">
-                <div class="portfolio-item">
-                    <div class="portfolio-item-content">
-                        <h3>Cal Poly Pomona AI Hackathon</h3>
-                        <p class="date">Mar 2026 – Present</p>
-                        <p>Designed and implemented AI-based solutions in a fast-paced team environment under strict time constraints. Utilized rapid prototyping, version control, and iterative testing to deliver functional software systems.</p>
+                <!-- A* FPGA -->
+                <div class="project-card">
+                    <div class="project-card-top">
+                        <span class="project-tag tag-academic">Academic</span>
+                        <h3 class="project-card-title">A* Path Planning on FPGA</h3>
+                    </div>
+                    <div class="project-card-body">
+                        <p>A hardware-accelerated implementation of the A* path planning algorithm in Verilog on an FPGA, with a Python interface for validation. I designed the hardware logic for parallel execution and validated performance against Python reference models across multiple test scenarios. The project required reasoning about timing constraints, resource utilization, and the gap between algorithmic logic and hardware reality.</p>
+                    </div>
+                    <div class="project-card-footer">
+                        <a href="https://github.com/cbmusonda/AStar_FPGA" target="_blank" rel="noopener noreferrer" class="btn-link">View on GitHub →</a>
                     </div>
                 </div>
+
+                <!-- Medical Image Segmentation -->
+                <div class="project-card">
+                    <div class="project-card-top">
+                        <span class="project-tag tag-academic">Academic</span>
+                        <h3 class="project-card-title">Medical Image Segmentation</h3>
+                    </div>
+                    <div class="project-card-body">
+                        <p>A PyTorch-based segmentation pipeline for cardiac MRI data. I built reproducible training workflows from the ground up and improved segmentation consistency through preprocessing decisions and metric-driven evaluation. The project deepened my understanding of how model architecture choices interact with data quality, and how much of machine learning is really careful data engineering.</p>
+                    </div>
+                    <div class="project-card-footer">
+                        <a href="https://github.com/cbmusonda/ComputerVision" target="_blank" rel="noopener noreferrer" class="btn-link">View on GitHub →</a>
+                    </div>
+                </div>
+
+                <!-- Broncos Gambit Chess Robot -->
+                <div class="project-card">
+                    <div class="project-card-top">
+                        <span class="project-tag tag-academic">Academic</span>
+                        <h3 class="project-card-title">Broncos Gambit — Chess Robot</h3>
+                    </div>
+                    <div class="project-card-body">
+                        <p>A self-playing chess robot built for the Broncos Gambit Championship as part of ECE 4318 Software Engineering at Cal Poly Pomona. Working with a team, I helped design and implement the system in Java and C/C++, bridging the software chess engine with physical robot hardware. The project was as much a lesson in system integration and team coordination as it was in algorithms — making hardware, firmware, and application logic all communicate correctly under real conditions.</p>
+                    </div>
+                    <div class="project-card-footer">
+                        <a href="https://github.com/cbmusonda/Broncos-Gambit" target="_blank" rel="noopener noreferrer" class="btn-link">View on GitHub →</a>
+                    </div>
+                </div>
+
+                <!-- CaseBridge — AI Hackathon Finalist -->
+                <div class="project-card project-card--finalist">
+                    <div class="project-card-top">
+                        <span class="project-tag tag-hackathon">Hackathon — Finalist</span>
+                        <h3 class="project-card-title">CaseBridge</h3>
+                    </div>
+                    <div class="project-card-body">
+                        <p>An AI-powered case management tool built for the Cal Poly Pomona AI Hackathon 2026, where our team reached the finals. CaseBridge targets the administrative overhead that consumes 60–70% of a social worker's day: an AI scribe converts session transcripts into structured case notes, a resource-matching tool connects clients to community services, and a form-filler auto-populates referral documents from existing case data. Built with React, Vite, Tailwind CSS, and the Anthropic Claude API.</p>
+                    </div>
+                    <div class="project-card-footer">
+                        <a href="https://github.com/Ryan-Simpson/CaseBridge" target="_blank" rel="noopener noreferrer" class="btn-link">View on GitHub →</a>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
 
-    <!-- Resume Section -->
-    <section id="resume" class="resume-section">
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
         <div class="container">
-            <h2 class="section-title">Resume</h2>
-            <div class="resume-content">
-                <div class="resume-download">
-                    <p>Download my resume to learn more about my experience and qualifications.</p>
-                    <a href="./Resume.pdf" class="btn-primary" download="Resume.pdf">Download Resume (PDF)</a>
-                    <p><a href="./Resume.pdf" class="btn-link" target="_blank" rel="noopener noreferrer">View Resume in Browser →</a></p>
+            <h2 class="section-title">Skills</h2>
+            <p class="section-intro">Here is an honest picture of where I am technically. I split this deliberately. I would rather show you what I can contribute on day one and what I am actively building toward.</p>
+            <div class="skills-columns">
+                <div class="skills-col">
+                    <h3 class="skills-col-title">Comfortable With</h3>
+                    <div class="skills-tags">
+                        <span class="skill-tag">C++</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">CUDA</span>
+                        <span class="skill-tag">Verilog</span>
+                        <span class="skill-tag">ROS 2</span>
+                        <span class="skill-tag">Flight Controllers (PX4, Pixhawk)</span>
+                        <span class="skill-tag">Embedded Compute (Jetson Orin AGX, Raspberry Pi)</span>
+                        <span class="skill-tag">FPGA (Xilinx / Vivado)</span>
+                        <span class="skill-tag">Autonomy Algorithms (SLAM, Behavior Trees, Path Planning)</span>
+                        <span class="skill-tag">ML &amp; Perception (PyTorch, Computer Vision)</span>
+                        <span class="skill-tag">Tooling (Git, Linux)</span>
+                    </div>
                 </div>
-                
-                <div class="resume-summary">
-                    <div class="resume-section-item">
-                        <h3>Technical Skills</h3>
-                        <div class="skills-list">
-                            <span class="skill-tag">C/C++</span>
-                            <span class="skill-tag">Python</span>
-                            <span class="skill-tag">Verilog</span>
-                            <span class="skill-tag">ROS 2 (Humble)</span>
-                            <span class="skill-tag">PX4</span>
-                            <span class="skill-tag">PyTorch</span>
-                            <span class="skill-tag">Git</span>
-                            <span class="skill-tag">Linux</span>
-                            <span class="skill-tag">Embedded Systems</span>
-                            <span class="skill-tag">Sensor Integration</span>
-                            <span class="skill-tag">UAV Autonomy</span>
-                        </div>
+                <div class="skills-col">
+                    <h3 class="skills-col-title">Currently Building Toward</h3>
+                    <div class="skills-tags">
+                        <span class="skill-tag skill-tag--learning">PCB Design</span>
+                        <span class="skill-tag skill-tag--learning">Embedded Microcontrollers (STM32 / ARM Cortex-M)</span>
                     </div>
                 </div>
             </div>
@@ -255,46 +395,30 @@
     <!-- Contact Section -->
     <section id="contact" class="contact-section">
         <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
+            <h2 class="section-title">Let's Talk</h2>
             <div class="contact-content">
-                <p>I'm always open to discussing new projects, collaboration opportunities, or conversations about autonomous systems and embedded engineering.</p>
+                <p>I am actively looking for new grad roles in robotics, autonomy, embedded systems, and software engineering. If something on this site caught your attention, I would love to hear from you.</p>
                 <div class="contact-links">
                     <a href="mailto:bradley.musonda@gmail.com" class="contact-link">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                             <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
                             <polyline points="22,6 12,13 2,6"></polyline>
                         </svg>
-                        bradley.musonda@gmail.com
+                        Email Me
+                    </a>
+                    <a href="https://www.linkedin.com/in/changwe-musonda" target="_blank" rel="noopener noreferrer" class="contact-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                        </svg>
+                        LinkedIn
+                    </a>
+                    <a href="https://github.com/cbmusonda" target="_blank" rel="noopener noreferrer" class="contact-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                        GitHub
                     </a>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- My Story Section -->
-    <section id="story" class="story-section">
-        <div class="container">
-            <h2 class="section-title">My Story</h2>
-            <div class="story-content">
-                <p>
-                    I am an Electrical and Computer Engineering student at Cal Poly Pomona focused on building autonomous systems that connect embedded hardware with intelligent software. Through research in the Autonomous Vehicle Laboratory and leadership on Team Pegasus, I design, test, and ship real systems, from perception and control to integration and validation.
-                </p>
-            </div>
-
-            <!-- Social Links -->
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/changwe-musonda" target="_blank" rel="noopener noreferrer">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-                    </svg>
-                    LinkedIn
-                </a>
-                <a href="https://github.com/cbmusonda" target="_blank" rel="noopener noreferrer">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                    </svg>
-                    GitHub
-                </a>
             </div>
         </div>
     </section>
@@ -303,10 +427,11 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <p>&copy; 2026 Changwe Musonda. All rights reserved.</p>
+                <p>&copy; 2026 Changwe Musonda</p>
                 <div class="footer-links">
                     <a href="https://www.linkedin.com/in/changwe-musonda" target="_blank" rel="noopener noreferrer">LinkedIn</a>
                     <a href="https://github.com/cbmusonda" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    <a href="./Resume.pdf" download="Resume.pdf">Resume</a>
                 </div>
             </div>
         </div>
